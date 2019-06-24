@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">酷安开发者平台</string>
+    <string name="auth">登录酷安账号</string>
+    <string name="err_get_list">此时无法获取应用列表，请稍后再试</string>
+    <string name="err_login">此时无法登录，请稍后再试（或您的账户没有开发者控制台访问权限）</string>
+    <string name="apk_item_context">%1$s下载</string>
+
+    <string name="action_waiting">待审核</string>
+    <string name="action_shelved">已上架</string>
+    <string name="action_new">新上架</string>
+    <string name="action_logout">注销</string>
+    <string name="action_login">登录</string>
+    <string name="action_about">关于</string>
+    <string name="action_all">全部</string>
+    <string name="action_deleted">已下架</string>
+    <string name="action_draft">草稿</string>
+    <string name="action_open_in_browser">在浏览器打开</string>
+    <string name="action_launch">启动</string>
+    <string name="action_publish">保存并发布</string>
+    <string name="action_save">保存</string>
+    <string name="action_settings">设置</string>
+    <string name="action_show_in_coolapk">在酷安中查看</string>
+    <string name="detail_id">ID：%1$d</string>
+    <string name="detail_size">安装包大小：%1$s</string>
+    <string name="detail_version">版本号：%1$s</string>
+    <string name="title_activity_detail">详细信息</string>
+    <string name="detail_downloads">下载量：%1$s</string>
+    <string name="detail_last">上次更新：%1$s</string>
+    <string name="settings_ui">用户界面</string>
+    <string name="settings_ui_splashanim">启动时播放动画</string>
+    <string name="settings_ui_splashanim_on">启用缩放动画</string>
+    <string name="settings_ui_splashanim_off">禁用缩放动画</string>
+    <string name="title_chart">下载和安装量</string>
+</resources>

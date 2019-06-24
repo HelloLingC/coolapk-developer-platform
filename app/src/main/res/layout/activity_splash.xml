@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_centerInParent="true"
+        android:id="@+id/splash_background"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/splash_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="98dp"
+                android:layout_height="98dp" />
+
+            <TextView
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp"
+                android:text="@string/app_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/splash_frame_lay"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:layout_gravity="center"
+                android:id="@+id/splash_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:text="@string/action_login"
+                android:id="@+id/splash_button_login"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

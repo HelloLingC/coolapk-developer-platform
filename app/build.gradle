@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.lingc.coolapkconsole"
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // Publish state. stable, beta, alpha
+        buildConfigField 'String', 'PUBLISH_STATE', '\"stable\"'
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:palette-v7:28.0.0'
+    // Analytics
+    //implementation 'com.google.android.gms:play-services-analytics:9.2.0'
+    // Jsoup
+    implementation 'org.jsoup:jsoup:1.10.2'
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    // Chart
+    implementation 'im.dacer:AndroidCharts:1.0.3'
+    // ButterKnife
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    // RxJava
+    implementation 'io.reactivex:rxjava:1.1.0'
+    implementation 'io.reactivex:rxandroid:1.1.0'
+    implementation 'com.artemzin.rxjava:proguard-rules:1.2.9.0'
+}
